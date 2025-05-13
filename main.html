@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Game Stats Table</title>
+  <style>
+    table {
+      width: 90%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    thead {
+      background-color: #23527c;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: center;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #e0e0e0;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    th {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    tbody td {
+      color: #333;
+      font-size: 16px;
+    }
+
+    tbody tr:last-child {
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+  </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Kills</th>
+        <th>Saved</th>
+        <th>Deaths</th>
+        <th>Revives</th>
+        <th>Win</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hackerman</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Cool Doggo</td>
+        <td>13</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Andrews</td>
+        <td>19</td>
+        <td>2</td>
+        <td>10</td>
+        <td>11</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Strawberry</td>
+        <td>2</td>
+        <td>9</td>
+        <td>3</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>
